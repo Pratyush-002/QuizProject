@@ -1,0 +1,163 @@
+/* MyWins.css */
+
+.mywins-dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mywins-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.mywins-main-container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    margin-left: 250px;
+}
+
+.mywins-section-1 .mywins-card2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mywins-section-1 .mywins-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mywins-section-1 .mywins-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.mywins-section-1 .mywins-col-3,
+.mywins-section-1 .mywins-col-4 {
+    flex: 1;
+    text-align: center;
+}
+
+.mywins-section-1 .mywins-col-3 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.mywins-section-1 .mywins-col-4 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mywins-section-1 .mywins-total-played-text {
+    color: #007bff;
+}
+
+.mywins-section-1 .mywins-total-played-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.mywins-section-2 .mywins-table-container {
+    margin-top: 20px;
+}
+
+.mywins-section-2 .mywins-table-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mywins-section-2 .mywins-table-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mywins-section-2 table {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+.mywins-section-2 .mywins-table-data {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.mywins-section-2 .mywins-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mywins-section-2 .mywins-pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mywins-section-2 .mywins-pagination-button.mywins-pagination-active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.mywins-section-2 .mywins-pagination-button:disabled {
+    cursor: not-allowed;
+    /* opacity: 0.5; */
+}
+
+.mywins-user-icon {
+    margin-top: 1rem;
+}
+
+.mywins-user-info {
+    margin-top: 1rem;
+}
+
+.mywins-vls {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mywins-section-1 .mywins-row {
+        flex-direction: column;
+    }
+
+    .mywins-section-1 .mywins-col-3,
+    .mywins-section-1 .mywins-col-4 {
+        margin-bottom: 10px;
+    }
+
+    .mywins-section-1 .mywins-col-4.mywins-vls {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .mywins-section-2 .mywins-pagination {
+        flex-wrap: wrap;
+    }
+
+    .mywins-section-2 .mywins-pagination-button {
+        margin: 5px;
+    }
+    .mywins-main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* margin-left: 250px; */
+    }
+}

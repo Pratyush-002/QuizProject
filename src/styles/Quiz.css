@@ -1,0 +1,441 @@
+/* General Container */
+.gigapromo-container {
+    font-family: 'Kavoon', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Quiz Content */
+  .gigapromo-content {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff;
+    margin-left: 250px; /* Adjust based on sidebar width */
+  }
+  
+  /* Layout for Start Quiz and Active Quiz */
+  .gigapromo-layout {
+    display: flex;
+    gap: 20px; /* Space between the two sections */
+    width: 100%;
+  }
+  
+  /* Start Quiz Button (70% width) */
+  .gigapromo-start {
+    flex: 70%; /* Takes 70% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .gigapromo-start button {
+    background-color: #D79618; /* GigaPromo theme color */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Limit button width */
+    /* position: absolute;
+    top: 50%;
+    right: 26%; */
+  }
+  
+  .gigapromo-start button:hover {
+    background-color: #b87d14; /* Darker shade for hover */
+  }
+  
+  /* Active Quiz Section (30% width) */
+  .gigapromo-active {
+    flex: 30%; /* Takes 30% of the width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+  }
+  
+  /* Question Header */
+  .gigapromo-question-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D79618; /* GigaPromo theme color */
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .gigapromo-question-header p {
+    margin: 0;
+  }
+  
+  .gigapromo-question-points {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .gigapromo-question-points label {
+    font-weight: bold;
+  }
+  
+  /* Question Body */
+  .gigapromo-question-body {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .gigapromo-question-body img {
+    width: 100px;
+  }
+  
+  /* Question Options */
+  .gigapromo-question-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display options horizontally */
+    gap: 0px; /* Space between options */
+    flex-direction: column;
+  }
+  
+  .gigapromo-question-options li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .gigapromo-question-options label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .gigapromo-question-options input[type="radio"] {
+    cursor: pointer;
+  }
+
+  /* Rules Box Styles */
+.info_box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 94%;
+    /* padding-bottom: 22px; */
+    /* padding-top: 22px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+
+  .info-list{
+    text-align: left;
+  }
+  
+  .info-list .info {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 60%;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .quit {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .restart {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Dynamic Class for Gigapromo */
+  .gigapromo-rules {
+    background-color: #e6f7ff;
+    border-color: #b3e5fc;
+  }
+  .giga-quiz_box{
+    flex: 70% 1;
+  }
+
+  /* Container for the quiz box */
+.gigapromo-quiz-box {
+  flex: 70% 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Quiz header */
+.gigapromo-quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gigapromo-quiz-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.gigapromo-timer {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.gigapromo-time-left {
+  font-size: 14px;
+  color: #555;
+  margin-right: 5px;
+}
+
+.gigapromo-timer-seconds {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.gigapromo-time-line {
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+/* Quiz body */
+.gigapromo-quiz-body {
+  margin-bottom: 20px;
+}
+
+.gigapromo-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.gigapromo-progress {
+  width: 26.67%; /* 4 out of 15 questions */
+  height: 100%;
+  background: #4caf50;
+  border-radius: 4px;
+}
+
+.gigapromo-question-progress {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.gigapromo-question-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gigapromo-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gigapromo-option {
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gigapromo-option:hover {
+  background: #e0e0e0;
+}
+
+/* Quiz footer */
+.gigapromo-quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gigapromo-total-questions {
+  font-size: 14px;
+  color: #555;
+}
+
+.gigapromo-next-btn {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.gigapromo-next-btn:hover {
+  background: #45a049;
+}
+
+/* Correct and Incorrect Options */
+.gigapromo-option.correct {
+  background-color: #4caf50; /* Green for correct answer */
+  color: white;
+}
+
+.gigapromo-option.incorrect {
+  background-color: #f44336; /* Red for incorrect answer */
+  color: white;
+}
+
+.gigapromo-option {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gigapromo-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Wrong Answer Modal */
+.gigapromo-option.correct {
+  background-color: #4caf50; /* Green for correct answer */
+  color: white;
+}
+
+.gigapromo-option.incorrect {
+  background-color: #f44336; /* Red for incorrect answer */
+  color: white;
+}
+/* Modal Overlay */
+.gigapromo-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Modal Box */
+.gigapromo-modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Modal Title */
+.gigapromo-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f44336; /* Red color for wrong answer */
+  margin-bottom: 10px;
+}
+
+/* Modal Message */
+.gigapromo-modal-message {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Modal Close Button */
+.gigapromo-modal-close-btn {
+  padding: 10px 20px;
+  background: #f44336; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove default focus outline */
+}
+
+.gigapromo-modal-close-btn:hover {
+  background: #d32f2f; /* Darker red on hover */
+}
+
+.gigapromo-modal-close-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+.gigapromo-modal-close-btn::after{
+  background: none;
+}
+
+/* timer CSS */
+
+.gigapromo-timer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.gigapromo-time-left {
+  font-weight: bold;
+}
+
+.gigapromo-timer-seconds {
+  font-weight: bold;
+  color: #f44336; /* Red color for emphasis */
+}
